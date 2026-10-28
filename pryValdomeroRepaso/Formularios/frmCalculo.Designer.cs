@@ -28,19 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalculo));
             btnCalcular = new Button();
             txtMonto = new TextBox();
             lblIva = new Label();
             lblMonto = new Label();
             lblResultado = new Label();
             cmbIva = new ComboBox();
-
             SuspendLayout();
             // 
             // btnCalcular
             // 
-
-            btnCalcular.Location = new Point(241, 208);
             btnCalcular.Location = new Point(267, 234);
             btnCalcular.Name = "btnCalcular";
             btnCalcular.Size = new Size(144, 38);
@@ -79,7 +77,6 @@
             // lblResultado
             // 
             lblResultado.AutoSize = true;
-            lblResultado.Location = new Point(76, 293);
             lblResultado.Location = new Point(76, 299);
             lblResultado.Name = "lblResultado";
             lblResultado.Size = new Size(62, 15);
@@ -100,13 +97,13 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(553, 408);
-            Controls.Add(comboBox1);
             Controls.Add(cmbIva);
             Controls.Add(lblResultado);
             Controls.Add(btnCalcular);
             Controls.Add(txtMonto);
             Controls.Add(lblIva);
             Controls.Add(lblMonto);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmCalculo";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculo Monto-Iva";
